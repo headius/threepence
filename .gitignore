@@ -12,3 +12,4 @@ TAGS
 patches*
 *#
 .stgit-edit.txt
+*.swp
