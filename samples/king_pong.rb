@@ -10,7 +10,7 @@ module Ball
 
   def initialize_behavior(root)
     @terrain = root.find_child(:terrain)
-    @velocity, Vector3f(0, 0, 0)
+    @velocity = Vector3f(0, 0, 0)
     reset(10)  # Initialize ball velocity
   end
   
@@ -206,7 +206,7 @@ class Main < ExampleBase
 	end.duplicate_as(:paddle2) do
           at SIZE, 0, 0
         end
-	skybox(:sky, 10, 10, 10 'images/skybox/blue')
+	skybox(:sky, 10, 10, 10, 'images/skybox/blue')
       end
     end
 

@@ -42,7 +42,7 @@ module ThreePence
 
     def divine_backtrace_error_location(error)
       return $1, $2 if error.backtrace[0] =~ /(.*):(\d+):in\s/o
-      return 'unknown', -1
+      return 'unknown', '-1'
     end
     private :divine_backtrace_error_location
 

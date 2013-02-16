@@ -49,7 +49,7 @@ module ThreePence
     # To avoid name conflicts with keys we prefix all these constants
     mouse_button = com.ardor3d.input.MouseButton
     mouse_button.constants.each do |name|
-      const_set "MOUSE_" + name, MouseInput.new(mouse_button.const_get(name))
+      const_set "MOUSE_" + name.to_s, MouseInput.new(mouse_button.const_get(name))
     end
 
     # Add a trigger to fire when the appropriate condition occurs.
